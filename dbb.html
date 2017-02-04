@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Course</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="students.html">Students</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="courses.html">Course</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-xs-11">
+          <div class="panel panel-primary">
+  					<div class="panel-body">
+            <div class="input-group">
+              <button class="btn btn-success " data-toggle="modal" data-target="#create" type="button"><strong>CREATE</strong></button>
+              <input type="text" class="form-control" placeholder="Search" />
+
+            </div>
+
+
+  					</div>
+  					<table class="table table-hover" id="dev-table">
+  						<thead>
+  							<tr>
+  								<th>รหัสวิชา</th>
+  								<th>ชื่อวิชา</th>
+  								<th>หน่วยกิต</th>
+  								<th>ผู้สอน</th>
+          
+                  <th>รายละเอียด</th>
+
+  							</tr>
+  						</thead>
+  						<tbody>
+  							<tr>
+  								<td id="number">01010141</td>
+  								<td id="name">Software Engineer</td>
+  								<td id="weight">3-0-3</td>
+  								<td id="teacher">KAB</td>
+                  
+                  <td><button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#xxxx" ><span class="glyphicon glyphicon-th"></span></button></td>
+  							</tr>
+  							<tr>
+  								<td id="number">01010145</td>
+  								<td id="name">Internet programming</td>
+  								<td id="weight">3-0-3</td>
+  								<td id="teacher">Obama</td>
+                  
+                  <td><button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#xxxx" ><span class="glyphicon glyphicon-th"></span></button></td>
+  							</tr>
+
+                <tr >
+
+  								<td id="number">01010142</td>
+  								<td id="name">Network</td>
+  								<td id="weight">3-0-3</td>
+  								<td id="teacher">Peter</td>
+
+                  
+                  <td><button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#xxxx" ><span class="glyphicon glyphicon-th"></span></button></td>
+  							</tr>
+  						</tbody>
+  					</table>
+				  </div>
+			  </div>
+        <div class="col-md-2 col-xs-1">
+          
+        </div>
+			</div>
+
+    </div>
+
+    <div class="modal fade" id="xxxx" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h4 class="modal-title">รายละเอียด</h4>
+          </div>
+          <div class="modal-body">
+            <p id="show"></p>
+            <p>วิชาก่อนหน้า เดวดึงมาจากDBอีกทีนะ</p>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
+
+    <div class="modal fade" id="create" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" style="text-align: center;">CREATE</h4>
+          </div>
+          <div class="modal-body">
+            <form method="GET" action="">
+              <span><label>รหัสวิชา:</label><input class="form-control" type="text"></span>
+              <span><label>ชื่อวิชา</label><input class="form-control" type="text"></span>
+               <span><label>ชื่อผู้สอน:</label><input class="form-control" type="text"></span>
+               <button class="btn btn-info" style="margin-top: 20px" >SUBMIT</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
+
+</div>
+<footer class="footer navbar-inverse">
+      <div class="container-fluid">
+        <span></span>
+      </div>
+      </footer>
+    <script>
+
+    $(document).ready(function(){
+        $('#show').html($('#number').text()+'<br>'+$('#name').text()+'<br>'+$('#weight').text()+'<br>'+$('#teacher').text());
+        $('#xxx').click(function(){
+            $("#app").append('<tr id="yoyo">'+'<td>'+$('#number').html()+'</td>'+'<td>'+$('#name').html()+'</td>'+'<td>'+$('#weight').html()+'</td>'+'<td>'+$('#teacher').html()+'</tr>');
+
+        });
+        $('#pid').click(function(){
+          $('#yoyo').remove();
+        });
+
+
+    });
+    </script>
+
+  </body>
+</html>

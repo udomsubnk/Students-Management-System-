@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Students</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="students.html">Students</a></li>
+	      <li><a href="courses.html">Course</a></li>
+	      <li><a href="accounts.html">Accounts</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+        	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class="contrainer">
+		<button type="button" class="btn btn-secondary" href="#collapse" data-toggle="collapse" style="width: 100%">Search <i class="fa fa-angle-double-down"></i></button>
+		<div id="collapse" class="collapse">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 students">
+					<div class="input-group">
+						<div class="input-group-btn">
+	 					    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Firstname
+	 						    <span class="caret"></span>
+						    </button>
+						    <ul class="dropdown-menu">
+						      <li><a href="#">Lastname</a></li>
+						      <li><a href="#">ID</a></li>
+						    </ul>
+	 					</div>
+						<input type="text" class="form-control" aria-label="#" placeholder="Name">
+					</div>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 students">
+					<div class="input-group">
+						<div class="input-group-btn">
+	 					    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">GPAX
+						    </button>
+	 					</div>
+	 					<div class="input-group" style="display: inline;">
+							<input type="text" class="form-control" aria-label="#" style="width: 50%" placeholder="0.00">
+							<input type="text" class="form-control" aria-label="#" style="width: 50%" placeholder="4.00">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 students">
+					<div class="input-group">
+						<div class="input-group-btn">
+	 					    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Comment
+						    </button>
+	 					</div>
+						<input type="text" class="form-control" aria-label="#" placeholder="Comment">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 students">
+					<button type="button" class="btn btn-primary" data-toggle="dropdown" style="width: 100%"><i class="fa fa-search"></i> Search </button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 students">
+			<div class="table">
+			   <table class="table table-hover table-striped">
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>ID</th>
+							<th>GPAX</th>
+							<th>ชั้นปี</th>
+							<th>Comment</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr><tr data-toggle="modal" data-target="#studentModal">
+							<td>Udomsub</td>
+							<td>Naikorn</td>
+							<td>5704062616526</td>
+							<td>5.0</td>
+							<td>1</td>
+							<td>เห็นประมาณ 20 ตัวอักษร</td>
+						</tr>
+						
+
+					</tbody>
+				</table>
+			   </div>
+			</div>
+
+
+
+			<div class="modal fade" id="studentModal">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title">
+								Udomsub Naikorn
+							</h4>
+						</div>
+						<div class="modal-body">
+							<h3>Name : Udomsub Naikorn</h3>
+							<h4>ID : 5704062616526</h4>
+							<h4>GPAX : 5.0</h4>
+							<h4>ชั้นปี : 3</h4>
+							<div class="course">	
+								<h4>วิชาที่ลงทะเบียนในเทอมนี้</h4>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>รหัสวิชา</th>
+											<th>ชื่อวิชา</th>
+											<th>section</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>04061230</td>
+											<td>Computer Bussiness</td>
+											<td>3</td>
+										</tr><tr>
+											<td>01010141</td>
+											<td>Software Engineer</td>
+											<td>3</td>
+										</tr><tr>
+											<td>01010145</td>
+											<td>Internet programming</td>
+											<td>3</td>
+										</tr><tr>
+											<td>04061230</td>
+											<td>Computer Network</td>
+											<td>3</td>
+										</tr><tr>
+											<td>01010149</td>
+											<td>Basketball</td>
+											<td>3</td>
+										</tr><tr>
+											<td>05011142</td>
+											<td>Computer Security</td>
+											<td>3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="commet">
+								<h4>Comment</h4>
+								<div class="well">คนดีเมตตาธรรม คำ้จุนโลก</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<!--
+		</div>
+	</div>
+</body>
+</html>

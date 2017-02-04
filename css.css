@@ -1,0 +1,39 @@
+*{
+ 	box-sizing: border-box;
+ }
+/* div.table{
+ 	height: 80vh;
+ 	overflow-y: scroll;
+ 	cursor: default;
+ }
+ .student{
+ 	height: 80vh;
+ 	padding: 20px;
+ 	overflow-y: scroll;
+ }*/
+ .row{
+ 	margin-top: 10px;
+ }
+ .course{
+ 	margin-top: 50px;
+ }
+ .modal-body{
+ 	overflow-y: scroll;
+ }
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+.gradesearch{
+	display: inline;
+}
+.gradesearch{
+	width: 20%;
+}
